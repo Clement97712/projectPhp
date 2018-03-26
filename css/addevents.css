@@ -1,0 +1,27 @@
+.dimensiondata {
+  padding: 38px 100px;
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid;*/
+  width: 100%;
+}
+
+form {
+  width: 700px;
+}
+
+.addevent {
+  display: flex;
+  justify-content: space-around;
+  padding: 38px;
+}
+
+.comment {
+  resize: none;
+}
+
+@media (max-width: 880px) {
+  .dimensiondata {
+    padding: 38px 0px;
+  }
+}

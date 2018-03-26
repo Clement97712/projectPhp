@@ -1,0 +1,28 @@
+.boxoffice {
+  border: 1px dashed green;
+  display: flex;
+  border: 1px solid;
+  width: auto;
+  height: auto;
+  padding: 76px;
+  justify-content: space-between;
+}
+
+.style {
+  width: 500px;
+  height: 355px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px 20px;
+}
+
+.form-control {
+  height: 30px;
+}
+
+.addevent {
+  display: flex;
+  justify-content: space-around;
+  padding: 38px;
+}
