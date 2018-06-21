@@ -1,56 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+   <!-- <meta http-equiv="refresh" content="75"/> -->
+    <title>Vybz -- Events</title>
+    <link rel='stylesheet' href='css/list.css' type='text/css'/>
+    
+<?php
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <link rel="stylesheet" href="css/events.css" type="text/css" />
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css">
-    <title>List events</title>
-</head>
+include "header.php";
+include "traitement/connexion.php";
 
-<body>
-    <?php
-        include 'element/composant.php';
-       // include 'controllers/events.php';
-        $header = new Composant();
-        $header->getHeader("images/jumbotron.jpg","Samuel Zeller");
-    ?>
+print("");
+  if(empty($_GET['page'])){
+    $page=1;
+  }
+  else{
+    $page=$_GET['page'];
+  }
+  $nbre=3;
+  $pages = ($page-1)*$nbre; // postion de l'element
+ // print("position:".$pages);
+  
+  
+?>
+
+  <div class="uk-container uk-container-large uk-padding"  >
+      <h2>Events</h2>
+<?php
+  $connect =  new Connexion();
+  $connect->nbrePages($pages,$nbre);
+?>
+</div>
 
 
-        <div class="boites">
-            <div class="title">
-                <h2>Liste Evenements</h2>
-            </div>
-            <div class="events">
-                <div>
-                    <p>Id: </p>
-                </div>
-                <div>
-                    <p>Affiche: </p>
-                </div>
-                <div>
-                    <p>Nom: </p>
-                </div>
-                <div>
-                    <p>Date:</p>
-                </div>
-                <div>
-                    <p>Heure: </p>
-                </div>
-            </div>
-            <div class="listevents">
-                <?php 
+</div>
 
-                   // $isListEvents = new Events();
-                   // $isListEvents->getAllEvent();
-                    $header->getElement();
-                ?>
-            </div>
-        </div>
-
-<div class="footers"></div>
-</body>
-
-</html>
+ <?php
+ include ('footer.php');
+ ?>

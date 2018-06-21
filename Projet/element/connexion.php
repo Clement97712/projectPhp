@@ -53,8 +53,7 @@ class Connexion {
             $table[]=$affiche;
         }
         return $table;
-        $this->dbname->closeCursor();
-
+        $this->dbname=null;
     }
 
 //Mise a jour des elements
