@@ -40,20 +40,20 @@
         <label class="uk-form-label" style="font-size:19px;" for="image">Picture</label>
             <select class="uk-select" id="image" name="images">
            
-                <option value="https://picsum.photos/200/300" >Default</option>
-                <option value="https://picsum.photos/200/300/?random" >Random</option>
-                <option value="https://picsum.photos/g/200/300" selected="selected">Grayscale</option>
-                <option value="https://picsum.photos/g/200/300/?random" selected="selected">Grayscale Random</option>
-                <option value="https://picsum.photos/200/300/?gravity=east">East</option>
-                <option value="https://picsum.photos/200/300/?gravity=west">West</option>
-                <option value="https://picsum.photos/200/300/?gravity=north">North</option>
-                <option value="https://picsum.photos/200/300/?gravity=south">South</option>
-                <option value="https://picsum.photos/200/300/?gravity=center">Center</option>
-                <option value="https://picsum.photos/g/200/300/?gravity=east">Grayscale East</option>
-                <option value="https://picsum.photos/g/200/300/?gravity=west">Grayscale West</option>
-                <option value="https://picsum.photos/g/200/300/?gravity=north">Grayscale North</option>
-                <option value="https://picsum.photos/g/200/300/?gravity=south">Grayscale South</option>
-                <option value="https://picsum.photos/g/200/300/?gravity=center">Grayscale Center</option>
+                <option value="https://picsum.photos/300/400" >Default</option>
+                <option value="https://picsum.photos/300/400/?random" >Random</option>
+                <option value="https://picsum.photos/g/300/400" selected="selected">Grayscale</option>
+                <option value="https://picsum.photos/g/300/400/?random" selected="selected">Grayscale Random</option>
+                <option value="https://picsum.photos/300/400/?gravity=east">East</option>
+                <option value="https://picsum.photos/300/400/?gravity=west">West</option>
+                <option value="https://picsum.photos/300/400/?gravity=north">North</option>
+                <option value="https://picsum.photos/300/400/?gravity=south">South</option>
+                <option value="https://picsum.photos/300/400/?gravity=center">Center</option>
+                <option value="https://picsum.photos/g/300/400/?gravity=east">Grayscale East</option>
+                <option value="https://picsum.photos/g/300/400/?gravity=west">Grayscale West</option>
+                <option value="https://picsum.photos/g/300/400/?gravity=north">Grayscale North</option>
+                <option value="https://picsum.photos/g/300/400/?gravity=south">Grayscale South</option>
+                <option value="https://picsum.photos/g/300/400/?gravity=center">Grayscale Center</option>
             </select>
         </div>
         <div class="uk-margin">

@@ -18,7 +18,7 @@ print("");
   else{
     $page=$_GET['page'];
   }
-  $nbre=3;
+  $nbre=5;
   $pages = ($page-1)*$nbre; // postion de l'element
  // print("position:".$pages);
   

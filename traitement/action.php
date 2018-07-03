@@ -30,8 +30,9 @@ $requete = "update book set nom='". $nom."', description='".$description."', dat
 connect($requete);
 }
 else{
-  $con = new Connexion();
-  $con->isInsert();
+  $requete = "insert into book (nom,description,dates,heure,affiche,prix) values ('". $nom."','".$description."', '".$dates."','".$times."','".$affiche."','".$price."')";
+  connect($requete);
+
 }
 
   function connect($requete){
@@ -40,6 +41,3 @@ else{
   $connect->makeAction($requete);
   }
 ?>
-
-
-

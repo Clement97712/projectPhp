@@ -1,0 +1,43 @@
+.container {
+  height: auto;
+}
+
+.infos {
+  display: flex;
+  margin: 38px 0px 76px 0px;
+  align-items: center;
+  /* border: 1px dashed green;*/
+}
+
+.images {
+  width: 100%;
+}
+
+.infos > img {
+  width: 100%;
+}
+
+.infos > div {
+  padding: 0px 10px;
+}
+
+@media (max-width: 800px) {
+  .infos {
+    flex-direction: column;
+    margin: 38px 0px;
+  }
+  .infos > div {
+    padding: 38px 15px;
+  }
+
+  div:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 299px) {
+  .infos > div > p,
+  h3 {
+    text-align: center;
+  }
+}
