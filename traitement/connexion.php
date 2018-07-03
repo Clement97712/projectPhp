@@ -8,7 +8,8 @@
     function __construct(){
 
       try{
-        $this->connexion = new PDO("pgsql:host=localhost;dbname=refs","amandine","fille");
+        $this->connexion = new PDO("pgsql:host=ec2-54-204-43-7.compute-1.amazonaws.com
+        ;dbname=dep31drocb5mmq","qmgltpnplxipdu","6699a4f04d1837331ceacc7ba3152a1315fa06488e3d770adad38b3919089580");
       }
       catch(PDOException $e){
 
